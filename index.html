@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=IM+Fell+English|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC|Manuale|Montserrat|Josefin+Slab"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Donegal+One" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Sawarabi+Gothic|Sawarabi+Mincho&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Cormorant+Infant|Cormorant+Unicase:300,400,500,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+
+    <script>
+        function setLayout(radio) {
+            var classList = document.getElementById("resume").classList;
+
+            if (classList.length > 0) {
+                classList.remove(classList);
+            }
+
+            classList.add(radio.value);
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="options" class="no-print">
+
+        <input type="radio" id="skills-on-left" name="resume-style" value="skills-on-left" onclick="setLayout(this)"
+            checked>
+        <label for="skills-on-left">Skills on left</label>
+
+        <input type="radio" id="flex-layout" name="resume-style" value="flex-layout" onclick="setLayout(this)">
+        <label for="flex-layout">Flex layout</label>
+
+        <input type="radio" id="no-styling" name="resume-style" value="no-styling" onclick="setLayout(this)">
+        <label for="no-styling">No styling</label>
+    </nav>
+
+    <main id="resume" class="skills-on-left">
+        <section id="name">
+            <h1>
+                <span>Jakub</span>
+                <span>Wronowski</span>
+            </h1>
+            <span class="occupation">Quant Developer</span>
+        </section>
+
+        <section id="info">
+            <h3>Info</h3>
+
+            <ul>
+                <li>Warsaw, Poland</li>
+                <li><a href="https://www.linkedin.com/in/jakubwro">linkedin.com/in/jakubwro</a>
+                </li>
+                <li><a href="https://www.github.com/jakubwro">github.com/jakubwro</a></li>
+            </ul>
+        </section>
+
+        <section id="profile">
+            <h3>Profile</h3>
+
+            <p>
+                Programmer with 9 years of professional experience. I&nbsphave had an opportunity to work for the
+                leading financial institutions developing tools for investment banking and risk management. I worked
+                with a&nbsp;broad spectrum of technologies although the most experince I&nbsp;gained in the .NET
+                framework. I also conducted hundreds of technical interviews and elaborated my own methodology that
+                allows me effective screening of consultants.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h3>Skills</h3>
+
+            <ul>
+                <li class="expert">C♯</li>
+                <li class="expert">JavaScript</li>
+                <li class="expert">TypeScript</li>
+                <li class="good">Python</meter></li>
+                <li class="good">Julia</meter></li>
+                <li class="beginer">x86 assembly</meter></li>
+                <li class="expert">SQL Server</meter></li>
+                <li class="beginer">Rust</li>
+
+                <li class="expert">.NET</li>
+                <li class="expert">Architecture</li>
+                <li class="expert">Web</li>
+                <li class="good">SQL Server</li>
+                <li class="expert">Regex</li>
+                <li class="good">Multithreading</li>
+                <li class="good">English Speaking</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h3>Experience</h3>
+
+            <ol>
+                <li>
+                    <span class="position">Quant Developer</span>
+                    <span class="employer">Margo</span>
+                    <span class="period">
+                        <span class="start">Aug 2017</span>
+                        <span class="end">now</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="position">Software Developer</span>
+                    <span class="employer">Onwelo S. A.</span>
+                    <span class="period">
+                        <span class="start">Apr 2016</span>
+                        <span class="end">May 2017</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="position">.NET Consultant</span>
+                    <span class="employer">Deloitte</span>
+                    <span class="period">
+                        <span class="start">Feb 2015</span>
+                        <span class="end">Apr 2016</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="position">Consultant</span>
+                    <span class="employer">7N</span>
+                    <span class="period"></span>
+                    <span class="start">Aug 2013</span>
+                    <span class="end">Feb 2015</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="position">Senior Consultant</span>
+                    <span class="employer">Bank Millennium</span>
+                    <span class="period">
+                        <span class="start">Dec 2011</span>
+                        <span class="end">Jul 2013</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="position">Programmer</span>
+                    <span class="employer">Lionbridge</span>
+                    <span class="period">
+                        <span class="start">Jul 2010</span>
+                        <span class="end">Dec 2011</span>
+                    </span>
+                </li>
+
+            </ol>
+        </section>
+
+        <section id="certifications">
+            <h3>Courses and Exams</h3>
+
+            <ol>
+                <li>
+                    <span class="name">Microsoft Certified Professional</span>
+                    <span class="when">Apr 2014</span>
+                </li>
+                <li>
+                    <span class="name">Programming in C# Specialist</span>
+                    <span class="when">Apr 2014</span>
+                </li>
+                <li>
+                    <span class="name">Programming in HTML5 with JavaScript and CSS3</span>
+                    <span class="when">Apr 2014 - Apr 2016</span>
+                </li>
+                <li>
+                    <span class="name">Heterogenous Parallel Programming</span>
+                    <span class="when">Mar 2015</span>
+                </li>
+            </ol>
+        </section>
+
+        <section id="consent">
+
+        </section>
+    </main>
+
+</body>
+
+</html>
