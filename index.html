@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CV_Jakub_Wronowski</title>
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css?family=IM+Fell+English|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC|Manuale|Montserrat|Josefin+Slab"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Donegal+One" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Sawarabi+Gothic|Sawarabi+Mincho&amp;subset=latin-ext"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Cormorant+Infant|Cormorant+Unicase:300,400,500,600,700&amp;subset=latin-ext"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <script>
         function setLayout(radio) {
@@ -30,9 +32,11 @@
             classList.add(radio.value);
         }
     </script>
+
 </head>
 
 <body>
+
     <nav id="options" class="no-print">
 
         <input type="radio" id="skills-on-left" name="resume-style" value="skills-on-left" onclick="setLayout(this)"
@@ -47,6 +51,11 @@
     </nav>
 
     <main id="resume" class="skills-on-left">
+        <div class="git-buttons">
+            <a href="https://github.com/jakubwro/resume"><img width="149" height="149"
+                    src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149"
+                    class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+        </div>
         <section id="name">
             <h1>
                 <span>Jakub</span>
@@ -59,10 +68,16 @@
             <h3>Info</h3>
 
             <ul>
-                <li>Warsaw, Poland</li>
-                <li><a href="https://www.linkedin.com/in/jakubwro">linkedin.com/in/jakubwro</a>
+
+                <li><i class="fas fa-map-marker-alt"></i> Warsaw, Poland</li>
+                <li><i class="fas fa-phone"></i> +48 795 854 575</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:jakubwro@gmail.com">jakubwro@gmail.com</a></li>
+
+                <li><a href="https://jakubwro.github.io/resume"><i class="fas fa-sync-alt"></i>
+                        jakubwro.github.io/resume</a></li>
+                <li><a href="https://www.linkedin.com/in/jakubwro">
+                        <i class="fab fa-linkedin"></i> linkedin.com/in/jakubwro</a>
                 </li>
-                <li><a href="https://www.github.com/jakubwro">github.com/jakubwro</a></li>
             </ul>
         </section>
 
@@ -70,36 +85,48 @@
             <h3>Profile</h3>
 
             <p>
-                Programmer with 9 years of professional experience. I&nbsphave had an opportunity to work for the
+                I am a programmer with 9 years of professional experience. I&nbsphave had an opportunity to work for the
                 leading financial institutions developing tools for investment banking and risk management. I worked
-                with a&nbsp;broad spectrum of technologies although the most experince I&nbsp;gained in the .NET
-                framework. I also conducted hundreds of technical interviews and elaborated my own methodology that
-                allows me effective screening of consultants.
+                with a&nbsp;broad spectrum of technologies although the most experience I&nbsp;gained in the .NET
+                framework. I&nbsp;also conducted hundreds of technical interviews and elaborated a methodology that
+                allows me effectively screen .NET developers.
             </p>
         </section>
 
-        <section id="skills">
-            <h3>Skills</h3>
+        <section id="programming-languages" class="skills">
+            <h3>Programming languages</h3>
 
             <ul>
                 <li class="expert">C♯</li>
                 <li class="expert">JavaScript</li>
                 <li class="expert">TypeScript</li>
-                <li class="good">Python</meter></li>
-                <li class="good">Julia</meter></li>
-                <li class="beginer">x86 assembly</meter></li>
-                <li class="expert">SQL Server</meter></li>
+                <li class="good">Python</li>
+                <li class="good">Julia</li>
+                <li class="beginer">x86 assembly</li>
                 <li class="beginer">Rust</li>
+            </ul>
 
+            <h3>Other skills</h3>
+
+            <ul>
                 <li class="expert">.NET</li>
+                <li class="expert">SQL Server</li>
+                <li class="expert">Visual Studio + R♯</li>
                 <li class="expert">Architecture</li>
-                <li class="expert">Web</li>
-                <li class="good">SQL Server</li>
-                <li class="expert">Regex</li>
+                <li class="expert">Design Patterns</li>
+                <li class="expert">Web Technologies</li>
+                <li class="expert">Regular Expressions</li>
+                <li class="expert">Excel</li>
+                <li class="good">Algorithms</li>
                 <li class="good">Multithreading</li>
-                <li class="good">English Speaking</li>
+                <li class="good">macOS</li>
+                <!-- <li class="good">GNU/Linux</li> -->
+                <li class="good">English Language</li>
+                <li class="beginer">Quantitative Finance</li>
+                <li class="beginer">Unit Testing</li>
             </ul>
         </section>
+
 
         <section id="experience">
             <h3>Experience</h3>
@@ -109,49 +136,60 @@
                     <span class="position">Quant Developer</span>
                     <span class="employer">Margo</span>
                     <span class="period">
+                        <span class="end">current</span>
                         <span class="start">Aug 2017</span>
-                        <span class="end">now</span>
                     </span>
+                    <span class="details">Working on systems for market risk management and time series
+                        generation due to FRTB regulations in .NET.</span>
                 </li>
                 <li>
                     <span class="position">Software Developer</span>
-                    <span class="employer">Onwelo S. A.</span>
+                    <span class="employer">Onwelo</span>
                     <span class="period">
-                        <span class="start">Apr 2016</span>
                         <span class="end">May 2017</span>
+                        <span class="start">Apr 2016</span>
                     </span>
+                    <span class="details">Developing systems for banking, insurance and telecom industries in .NET,
+                        Java and mobile technologies.</span>
+                </li>
+                <li>
+                    <span class="position">Programmer</span>
+                    <span class="employer">Deloitte</span>
+                    <span class="period">
+                        <span class="end">Apr 2016</span>
+                        <span class="start">Feb 2015</span>
+                    </span>
+                    <span class="details">Working on system for credit risk management according to Basel III
+                        regulations in .NET technologies.</span>
                 </li>
                 <li>
                     <span class="position">.NET Consultant</span>
-                    <span class="employer">Deloitte</span>
-                    <span class="period">
-                        <span class="start">Feb 2015</span>
-                        <span class="end">Apr 2016</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="position">Consultant</span>
                     <span class="employer">7N</span>
-                    <span class="period"></span>
-                    <span class="start">Aug 2013</span>
-                    <span class="end">Feb 2015</span>
+                    <span class="period">
+                        <span class="end">Feb 2015</span>
+                        <span class="start">Aug 2013</span>
                     </span>
+                    <span class="details">Programming tools for investment banking and forex trading for mBank.</span>
                 </li>
                 <li>
                     <span class="position">Senior Consultant</span>
                     <span class="employer">Bank Millennium</span>
                     <span class="period">
-                        <span class="start">Dec 2011</span>
                         <span class="end">Jul 2013</span>
+                        <span class="start">Dec 2011</span>
                     </span>
+                    <span class="details">Developing web transactional systems for corporate clients. Design of high
+                        performance permissions module.</span>
                 </li>
                 <li>
                     <span class="position">Programmer</span>
                     <span class="employer">Lionbridge</span>
                     <span class="period">
-                        <span class="start">Jul 2010</span>
                         <span class="end">Dec 2011</span>
+                        <span class="start">Jul 2010</span>
                     </span>
+                    <span class="details">Coordinating software localization project and developing process automation
+                        tools in .NET.</span>
                 </li>
 
             </ol>
@@ -162,20 +200,17 @@
 
             <ol>
                 <li>
-                    <span class="name">Microsoft Certified Professional</span>
-                    <span class="when">Apr 2014</span>
+                    <span class="name">
+                        <a href="https://mcp.microsoft.com/Anonymous/Transcript/Validate">&#x1F517; Microsoft
+                            Certifications</a></span>
+                    <span class="details">
+                        <span>Transcript ID: 1121224, Access Code: 12345678</span>
+                    </span>
                 </li>
                 <li>
-                    <span class="name">Programming in C# Specialist</span>
-                    <span class="when">Apr 2014</span>
-                </li>
-                <li>
-                    <span class="name">Programming in HTML5 with JavaScript and CSS3</span>
-                    <span class="when">Apr 2014 - Apr 2016</span>
-                </li>
-                <li>
-                    <span class="name">Heterogenous Parallel Programming</span>
-                    <span class="when">Mar 2015</span>
+                    <span class="name">
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/MAYFAAA5YR">&#x1F517;
+                            Heterogeneous Parallel Programming</a></span>
                 </li>
             </ol>
         </section>
