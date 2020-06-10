@@ -20,42 +20,16 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <script>
-        function setLayout(radio) {
-            var classList = document.getElementById("resume").classList;
-
-            if (classList.length > 0) {
-                classList.remove(classList);
-            }
-
-            classList.add(radio.value);
-        }
-    </script>
-
 </head>
 
 <body>
 
-    <nav id="options" class="no-print">
-
-        <input type="radio" id="skills-on-left" name="resume-style" value="skills-on-left" onclick="setLayout(this)"
-            checked>
-        <label for="skills-on-left">Skills on left</label>
-
-        <input type="radio" id="flex-layout" name="resume-style" value="flex-layout" onclick="setLayout(this)">
-        <label for="flex-layout">Flex layout</label>
-
-        <input type="radio" id="no-styling" name="resume-style" value="no-styling" onclick="setLayout(this)">
-        <label for="no-styling">No styling</label>
-    </nav>
-
     <main id="resume" class="skills-on-left">
-        <div class="git-buttons">
+        <!-- <div class="git-buttons">
             <a href="https://github.com/jakubwro/resume"><img width="149" height="149"
                     src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149"
                     class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-        </div>
+        </div> -->
         <section id="name">
             <h1>
                 <span>Jakub</span>
@@ -65,10 +39,9 @@
         </section>
 
         <section id="info">
-            <h3>Info</h3>
+            <h3>Contact</h3>
 
             <ul>
-
                 <li><i class="fas fa-map-marker-alt"></i> Warsaw, Poland</li>
                 <li><i class="fas fa-phone"></i> +48 795 854 575</li>
                 <li><i class="fas fa-envelope"></i> <a href="mailto:jakubwro@gmail.com">jakubwro@gmail.com</a></li>
@@ -88,9 +61,10 @@
                 I am a programmer with 9 years of professional experience. I&nbsphave had an opportunity to work for the
                 leading financial institutions developing tools for investment banking and risk management. I worked
                 with a&nbsp;broad spectrum of technologies although the most experience I&nbsp;gained in the .NET
-                framework. I&nbsp;also conducted hundreds of technical interviews and elaborated a methodology that
-                allows me effectively screen .NET developers.
-            </p>
+                framework. I can work proficiently with Windows, macOS and Unix operating systems. I have experience also in
+                dev ops and gathering business requirements form users. Moreover I have ability to solve non standard problems thinking out of the box.
+                I am looking for a job providing challenging tasks that will
+                help me to develop my skills.
         </section>
 
         <section id="programming-languages" class="skills">
@@ -103,10 +77,9 @@
                 <li class="good">Python</li>
                 <li class="good">Julia</li>
                 <li class="beginer">x86 assembly</li>
-                <li class="beginer">Rust</li>
             </ul>
 
-            <h3>Other skills</h3>
+            <h3>Essential skills</h3>
 
             <ul>
                 <li class="expert">.NET</li>
@@ -116,87 +89,75 @@
                 <li class="expert">Design Patterns</li>
                 <li class="expert">Web Technologies</li>
                 <li class="expert">Regular Expressions</li>
-                <li class="expert">Excel</li>
-                <li class="good">Algorithms</li>
+                <li class="expert">Unit Testing</li>
+                <li class="expert">Algorithms</li>
                 <li class="good">Multithreading</li>
-                <li class="good">macOS</li>
+                <!-- <li class="good">DevOps</li> -->
                 <!-- <li class="good">GNU/Linux</li> -->
                 <li class="good">English Language</li>
                 <li class="beginer">Quantitative Finance</li>
-                <li class="beginer">Unit Testing</li>
             </ul>
         </section>
 
 
         <section id="experience">
-            <h3>Experience</h3>
+            <h3>Professional experience</h3>
 
             <ol>
                 <li>
+                    <span class="period">
+                        <span class="start">2017/08</span>
+                        <span class="end">2019/08</span>
+                    </span>
                     <span class="position">Quant Developer</span>
                     <span class="employer">Margo</span>
-                    <span class="period">
-                        <span class="end">current</span>
-                        <span class="start">Aug 2017</span>
-                    </span>
-                    <span class="details">Working on systems for market risk management and time series
-                        generation due to FRTB regulations in .NET.</span>
                 </li>
                 <li>
+                    <span class="period">
+                        <span class="start">2016/04</span>
+                        <span class="end">2017/05</span>
+                    </span>
                     <span class="position">Software Developer</span>
                     <span class="employer">Onwelo</span>
-                    <span class="period">
-                        <span class="end">May 2017</span>
-                        <span class="start">Apr 2016</span>
-                    </span>
-                    <span class="details">Developing systems for banking, insurance and telecom industries in .NET,
-                        Java and mobile technologies.</span>
                 </li>
                 <li>
+                    <span class="period">
+                        <span class="start">2015/02</span>
+                        <span class="end">2016/04</span>
+                    </span>
                     <span class="position">Programmer</span>
                     <span class="employer">Deloitte</span>
-                    <span class="period">
-                        <span class="end">Apr 2016</span>
-                        <span class="start">Feb 2015</span>
-                    </span>
-                    <span class="details">Working on system for credit risk management according to Basel III
-                        regulations in .NET technologies.</span>
                 </li>
                 <li>
+                    <span class="period">
+                        <span class="start">2013/08</span>
+                        <span class="end">2015/02</span>
+                    </span>
                     <span class="position">.NET Consultant</span>
                     <span class="employer">7N</span>
-                    <span class="period">
-                        <span class="end">Feb 2015</span>
-                        <span class="start">Aug 2013</span>
-                    </span>
-                    <span class="details">Programming tools for investment banking and forex trading for mBank.</span>
                 </li>
                 <li>
+                    <span class="period">
+                        <span class="start">2011/12</span>
+                        <span class="end">2013/07</span>
+                    </span>
                     <span class="position">Senior Consultant</span>
                     <span class="employer">Bank Millennium</span>
-                    <span class="period">
-                        <span class="end">Jul 2013</span>
-                        <span class="start">Dec 2011</span>
-                    </span>
-                    <span class="details">Developing web transactional systems for corporate clients. Design of high
-                        performance permissions module.</span>
                 </li>
                 <li>
+                    <span class="period">
+                        <span class="start">2010/07</span>
+                        <span class="end">2011/12</span>
+                    </span>
                     <span class="position">Programmer</span>
                     <span class="employer">Lionbridge</span>
-                    <span class="period">
-                        <span class="end">Dec 2011</span>
-                        <span class="start">Jul 2010</span>
-                    </span>
-                    <span class="details">Coordinating software localization project and developing process automation
-                        tools in .NET.</span>
                 </li>
 
             </ol>
         </section>
 
         <section id="certifications">
-            <h3>Courses and Exams</h3>
+            <h3>Courses and exams</h3>
 
             <ol>
                 <li>
@@ -206,6 +167,17 @@
                     <span class="details">
                         <span>Transcript ID: 1121224, Access Code: 12345678</span>
                     </span>
+                    <div class="item">
+                        <span class="period">2014/01</span>
+                        Microsoft Specialist: Programming in C#</div>
+                    <div class="item"><span class="period">2014/01</span>
+                        MCSD: Web Applications</div>
+                    <div class="item">
+                        <span class="period">2013/10</span>
+                        Programming in HTML5 with JavaScript and CSS3</div>
+                    <div class="item">
+                        <span class="period">2013/10</span>
+                        MCP: Microsoft Certified Professional</div>
                 </li>
                 <li>
                     <span class="name">
@@ -218,6 +190,429 @@
         <section id="consent">
 
         </section>
+
+
+        <section id="employment-details">
+            <div class="item">
+
+                <h3>Quant developer at Margo</h3>
+                <div class="description">
+                    Working on market risk management systems for the biggest European investment bank as a software developer
+                    and quantitative analyst.
+                    <br />
+                    My responsibilities:
+                    <ul class="projects-list">
+                        <li>developing tools for time series generation and analysis in .NET and Python</li>
+                        <li>writing libraries reused by quants in several projects</li>
+                        <li>implementing risk management systems requirements due to FRTB regulations</li>
+                        <li>helping model developers with programming and software deployment</li>
+                        <li>setting up of continuous integration and continuous deployment solution with TeamCity</li>
+                        <li>calculating periods of stressed VaR with graphical user interface in Python</li>
+                        <li>creating tools for regression tests and code coverage ran after each CI build</li>
+                        <li>refactoring software to unit testable architecture</li>
+                        <li>performance optimization and code refactoring</li>
+                        <li>designing and implementing algorithms and data structures for the best performance</li>
+                        <li>advisory in software architecture and development process</li>
+                        <li>enforcing polices to increase code quality like mandatory code reviews</li>
+                        <li>conducting technical interviews of candidates</li>
+                    </ul>
+                </div>
+
+                <div class="skill-aside">
+
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>C#</li>
+                            <li>F#</li>
+                            <li>Python</li>
+                            <li>Powershell</li>
+                            <li>VBA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>.NET</li>
+                            <li>Git</li>
+                            <li>SVN</li>
+                            <li>Resharper</li>
+                            <li>PyCharm</li>
+                            <li>Visual Studio 2017</li>
+                            <li>Visual Studio 2019</li>
+                            <li>VS Code</li>
+                            <li>Spyder</li>
+                            <li>Jupyter notebook</li>
+                            <li>Anaconda</li>
+                            <li>TeamCity</li>
+                            <li>Jenkins</li>
+                            <li>Jira</li>
+                            <li>Artifactory</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>dotCover</li>
+                            <li>NUnit</li>
+                            <li>NSubstitute</li>
+                            <li>Pandas</li>
+                            <li>Numpy</li>
+                            <li>Moq</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>Numerical Methods</li>
+                            <li>Statistics</li>
+                            <li>Math</li>
+                            <li>Quantitative Finance</li>
+                            <li>Unit testing</li>
+                            <li>SOLID</li>
+                            <li>Scrum</li>
+                            <li>Dependency Injection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+
+                <h3>Software Developer at Onwelo </h3>
+                <div class="skill-aside">
+
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>Powershell</li>
+                            <li>VBA</li>
+                            <li>Swift</li>
+                            <li>Java</li>
+                            <li>Groovy</li>
+                            <li>T-SQL</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>Elm</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>Resharper</li>
+                            <li>Visual Studio 2015</li>
+                            <li>Xcode</li>
+                            <li>Git</li>
+                            <li>SVN</li>
+                            <li>Mercurial</li>
+                            <li>TeamCity</li>
+                            <li>Jira</li>
+                            <li>Azure</li>
+                            <li>SQL Server</li>
+                            <li>Hyper-V</li>
+                            <li>LXD</li>
+                            <li>Docker</li>
+                            <li>node.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>NUnit</li>
+                            <li>Moq</li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <li>Entity Framework</li>
+                            <li>WPF</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Knockout.js</li>
+                            <li>AngularJS</li>
+                            <li>Swagger</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>Unit testing</li>
+                            <li>SOLID</li>
+                            <li>REST</li>
+                            <li>Dependency Injection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    Developing systems for banking, insurance and telecom industries in various technologies.
+                    <br />
+                    My responsibilities:
+                    <ul class="projects-list">
+                        <li>creating plugins for client's apps in .NET and WPF</li>
+                        <li>preparing proof of concept and evaluation of transactional system for a big corporate
+                            bank</li>
+                        <li>creating mobile apps for iOS and Android in Cocoa and Xamarin</li>
+                        <li>creating web user interfaces in HTML 5 and CSS</li>
+                        <li>managing virtualized environment in Hyper-V and LXD</li>
+                        <li>designed and coded internal application for testing candidates in purely functional
+                            language Elm</li>
+                        <li>developing of tools for business process automation</li>
+                        <li>performance optimization and code refactoring</li>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <li>preparing presentations and proof of concepts for clients</li>
+                        <li>designing relational databases with object-relational mappings</li>
+                        <li>creating REST services in Swagger and OpenAPI tools</li>
+                        <li>integrating various client systems with web services</li>
+                        <li>loading and migrating data between clients' systems</li>
+                        <li>preparing offers for clients and gathering their requirements</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="item">
+
+                <h3>Programmer at Deloitte</h3>
+                <div class="skill-aside">
+
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>VBA</li>
+                            <li>T-SQL</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>Visual Studio 2015</li>
+                            <li>TeamCity</li>
+                            <li>SQL Server</li>
+                            <li>Resharper</li>
+                            <li>Git</li>
+                            <li>SVN</li>
+                            <li>Jira</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>Entity Framework</li>
+                            <li>LINQ to SQL</li>
+                            <li>WebForms</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>TPL</li>
+                            <li>Autofac</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>SOLID</li>
+                            <li>Dependency Injection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    Development of credit risk management system for a big retail bank.
+                    <br />
+                    My responsibilities:
+                    <ul class="projects-list">
+                        <li>implementing credit risk system accordingly to Basel III requirements</li>
+                        <li>creating web user interfaces in ASP.NET WebForms</li>
+                        <li>designing SQL Server databases</li>
+                        <li>writing SQL Server functions, views and stored procedures</li>
+                        <li>optimizing and analyzing T-SQL queries</li>
+                        <li>increasing processing speed with multithreading</li>
+                        <li>performance optimization and code refactoring</li>
+                        <li>preparing presentations and proof of concepts for clients</li>
+                        <li>gathering business requirements</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+
+                <h3>.NET Consultant at 7N</h3>
+                <div class="skill-aside">
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>XSLT</li>
+                            <li>VBA</li>
+                            <li>T-SQL</li>
+                            <li>JavaScript</li>
+                            <li>awk</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>Resharper</li>
+                            <li>Visual Studio 2015</li>
+                            <li>Git</li>
+                            <li>SVN</li>
+                            <li>Jira</li>
+                            <li>Fisheye</li>
+                            <li>Unix</li>
+                            <li>SQL Server</li>
+                            <li>node.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>LINQ to SQL</li>
+                            <li>WinForms</li>
+                            <li>Autofac</li>
+                            <li>TPL</li>
+                            <li>LINQ</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>SOLID</li>
+                            <li>Dependency Injection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    Development of tools for investment banking and forex trading for mBank.
+                    <br />
+                    My responsibilities:
+                    <ul class="projects-list">
+                        <li>designing effective algorithms and data structures for storing quotations</li>
+                        <li>creating user interfaces in WinForms and web technologies</li>
+                        <li>designing SQL server databases</li>
+                        <li>performance optimization and code refactoring</li>
+                        <li>retrieving, transforming and loading data between systems developed
+                            in various technologies
+                        </li>
+                        <li>writing bash scripts in Unix (AIX) with awk, sed and perl</li>
+                        <li>investigating and fixing bugs reported by users</li>
+                        <li>writing unit and regression tests</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            
+            <div class="item">
+
+                <h3>Senior Consultant at Bank Millennium</h3>
+                <div class="skill-aside">
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>VBA</li>
+                            <li>T-SQL</li>
+                            <li>JavaScript</li>
+                            <li>XSLT</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>SVN</li>
+                            <li>Visual Studio 2013</li>
+                            <li>SSMS</li>
+                            <li>Jira</li>
+                            <li>Fisheye</li>
+                            <li>Confluence</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>ADO.NET</li>
+                            <li>ASP.NET</li>
+                            <li>TPL</li>
+                            <li>LINQ</li>
+                            <li>Knockout.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>SOLID</li>
+                            <li>SOA</li>
+                            <li>Microservices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    Development of web transactional system for corporate clients
+                    <br />
+                    My responsibilities:
+                    <ul class="projects-list">
+                        <li>creating web user interfaces in ASP.NET and Knockout.js</li>
+                        <li>implementing a service layer for transactional system</li>
+                        <li>analyzing reported bugs and fixing them</li>
+                        <li>design and implementation of high performance permissions module</li>
+                        <li>adding new features requested by clients</li>
+                        <li>designing relational databases</li>
+                        <li>analyzing T-SQL query plans</li>
+                        <li>tracing database deadlocks and reducing their number by 90%</li>
+                        <li>analyzing events from SQL Server event traces</li>
+                        <li>creating and consuming web services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+
+                <h3>Programmer at Lionbridge</h3>
+                <div class="skill-aside">
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>VBA</li>
+                            <li>T-SQL</li>
+                            <li>JavaScript</li>
+                            <li>XSLT</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>SVN</li>
+                            <li>TFS</li>
+                            <li>.NET</li>
+                            <li>SQL Server</li>
+                            <li>Visual Studio 2008</li>
+                            <li>SSMS</li>
+                            <li>Excel</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <ul class="technology-list">
+                            <li>ADO.NET</li>
+                            <li>WebForms</li>
+                            <li>ASP.NET</li>
+                            <li>LINQ</li>
+                            <li>SSRS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    Technical coordination of localization project for Microsoft and software development
+                    for Cisco.
+                    <br />
+                    My responsibilities:
+                    <ul class="projects-list">
+                        <li>designing and implementing web services</li>
+                        <li>analyzing T-SQL query plans</li>
+                        <li>creating web user interfaces in ASP.NET WebForms</li>
+                        <li>designing relational databases</li>
+                        <li>adding new functionalities to the existing software</li>
+                        <li>analyzing and fixing reported bugs</li>
+                        <li>technical validation of translated resources</li>
+                        <li>writing instructions for translators</li>
+                        <li>process automation with VBA and Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>
